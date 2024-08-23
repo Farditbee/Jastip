@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\AboutController;
+use App\Http\Controllers\DisplayController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -23,7 +23,9 @@ Route::middleware('auth')->group(function () {
 //     Route::resource('dashboard/about', AboutController::class)->except('show');
 // });
 
-    Route::resource('dashboard/about', AboutController::class)->except('show');
+    Route::get('/dashboard/display', [DisplayController::class, 'index'])->name('dashboard.display.index');
+    Route::get('/dashboard/display/create', [DisplayController::class, 'create'])->name('dashboard.display.create');
+    Route::post('/dashboard/display/store', [DisplayController::class, 'store'])->name('dashboard.display.store');
 
 
 require __DIR__.'/auth.php';

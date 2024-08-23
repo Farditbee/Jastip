@@ -28,13 +28,14 @@
                <li><a href="#"> <i class="fa fa-circle" style="font-size: 12px"></i> <span>Data User</span></a></li>
                <li><a href="#"><i class="fa fa-circle" style="font-size: 12px"></i> <span>Data Kamar</span></a></li>
                <li><a href="#"><i class="fa fa-circle" style="font-size: 12px"></i> <span>Data Pesanan</span></a></li>
+               <li><a href="{{ route('dashboard.display.index')}}"><i class="fa fa-circle" style="font-size: 12px"></i> <span>Display</span></a></li>
             </ul>
          </li>
         <li>
             <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone red_color"></i> <span>Landing Page</span></a>
             <ul class="collapse list-unstyled" id="element">
                <li><a href="#"> <i class="fa fa-circle" style="font-size: 12px"></i> <span>Slider</span></a></li>
-               <li><a href="{{ route('about.index')}}"> <i class="fa fa-circle" style="font-size: 12px"></i> <span>About Us</span></a></li>
+               <li><a href="#"> <i class="fa fa-circle" style="font-size: 12px"></i> <span>About Us</span></a></li>
                <li><a href="#"><i class="fa fa-circle" style="font-size: 12px"></i> <span>Services</span></a></li>
                <li><a href="#"><i class="fa fa-circle" style="font-size: 12px"></i> <span>Rooms</span></a></li>
             </ul>
