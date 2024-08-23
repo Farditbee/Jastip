@@ -39,16 +39,16 @@
             <div class="col-lg-6">
                 <div class="row g-3">
                     <div class="col-6 text-end">
-                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="{{ asset('hotelier-1.0.0') }}/img/about-1.jpg" style="margin-top: 25%;">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="{{ asset('hotelier-1.0.1') }}/img/about-1.jpg" style="margin-top: 25%;">
                     </div>
                     <div class="col-6 text-start">
-                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="{{ asset('hotelier-1.0.0') }}/img/about-2.jpg">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="{{ asset('hotelier-1.0.1') }}/img/about-2.jpg">
                     </div>
                     <div class="col-6 text-end">
-                        <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="{{ asset('hotelier-1.0.0') }}/img/about-3.jpg">
+                        <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="{{ asset('hotelier-1.0.1') }}/img/about-3.jpg">
                     </div>
                     <div class="col-6 text-start">
-                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="{{ asset('hotelier-1.0.0') }}/img/about-4.jpg">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="{{ asset('hotelier-1.0.1') }}/img/about-4.jpg">
                     </div>
                 </div>
             </div>

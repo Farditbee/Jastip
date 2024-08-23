@@ -23,7 +23,7 @@ Route::middleware('auth')->group(function () {
 //     Route::resource('dashboard/about', AboutController::class)->except('show');
 // });
 
-    Route::resource('dashboard/about', AboutController::class);
+    Route::resource('dashboard/about', AboutController::class)->except('show');
 
 
 require __DIR__.'/auth.php';

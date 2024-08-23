@@ -33,29 +33,33 @@ class AboutController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'thumbabout1' => 'image|file|max:4096',
-            'thumbabout2' => 'image|file|max:4096',
-            'thumbabout3' => 'image|file|max:4096',
-            'thumbabout4' => 'image|file|max:4096',
             'slugabout' => 'required',
+        ],[
+            // 'thumbabout1.required' => 'Foto tidak boleh kosong.',
+            'slugabout.required' => 'Keterangan harus diisi.',
         ]);
 
-        if($request->file('thumbabout1', 'thumbabout2', 'thumbabout3', 'thumbabout4',)){
+        if ($request->hasFile('thumbabout1')) {
             $validatedData['thumbabout1'] = $request->file('thumbabout1')->store('files');
+        }
+        if ($request->hasFile('thumbabout2')) {
             $validatedData['thumbabout2'] = $request->file('thumbabout2')->store('files');
+        }
+        if ($request->hasFile('thumbabout3')) {
             $validatedData['thumbabout3'] = $request->file('thumbabout3')->store('files');
+        }
+        if ($request->hasFile('thumbabout4')) {
             $validatedData['thumbabout4'] = $request->file('thumbabout4')->store('files');
         }
 
-        About::create($validatedData);
+        // About::create($validatedData);
         // return $request->file('thumbabout1')->store('files');
-        // try {
-        //     About::create($request->validated());
-        // } catch (\Throwable $th) {
-        //     return redirect()->back()->with('error', 'Gagal menambahkan About ' . $th->getMessage());
-        // }
-
-        return redirect()->back()->with('success', 'Berhasil menambahkan About');
+        try {
+            About::create($request->validated());
+            return redirect()->route('about.index')->with('success', 'Berhasil menambahkan About');
+        } catch (\Throwable $th) {
+            return redirect()->back()->with('error', 'Gagal menambahkan About: ' . $th->getMessage());
+        }
     }
 
     public function messages()

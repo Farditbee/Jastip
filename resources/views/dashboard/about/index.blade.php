@@ -26,9 +26,6 @@
                          </div>
                       </div>
                    </div>
-                   <div class="button">
-                   <a href="{{route ('about.create')}}" class="btn cur-p btn-info"><i class="fa fa-plus"></i>  Tambah Data</a>
-                 </div>
                  <br>
                    <!-- row -->
                    <div class="row">
@@ -39,8 +36,12 @@
                                <div class="heading1 margin_0">
                                   <h2>About Us</h2>
                                </div>
+                               <div class="button" style="float: right;">
+                                <a href="{{route ('about.create')}}" class="btn cur-p btn-info"><i class="fa fa-plus"></i>  Tambah</a>
+                              </div>
                             </div>
                             <div class="table_section padding_infor_info">
+
                                <div class="table-responsive-sm">
                                   <table class="table">
                                      <thead>
@@ -49,7 +50,7 @@
                                            <th>Gambar 2</th>
                                            <th>Gambar 3</th>
                                            <th>Gambar 4</th>
-                                           <th>Tentang Hotel</th>
+                                           <th>Keterangan</th>
                                            <th>Action</th>
                                         </tr>
                                     </thead>

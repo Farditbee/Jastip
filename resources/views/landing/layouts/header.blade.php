@@ -2,7 +2,7 @@
     <div class="row gx-0">
         <div class="col-lg-3 bg-dark d-none d-lg-block">
             <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                <h1 class="m-0 text-primary text-uppercase">Jastips</h1>
             </a>
         </div>
         <div class="col-lg-9">
@@ -28,7 +28,7 @@
             </div>
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                 <a href="index.html" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                    <h1 class="m-0 text-primary text-uppercase">Jastips</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="{{ route('dashboard') }}" class="btn btn-primary rounded-0 py-4 px-md-4 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a>
+                    <a href="{{ route('dashboard') }}" class="btn btn-primary rounded-0 py-4 px-md-4 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3" style="float: right;"></i></a>
                 </div>
             </nav>
         </div>
