@@ -4,9 +4,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DisplayController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('landing.index');
-});
+Route::get('/', function () {return view('landing.index');});
+Route::get('/baju', function () {return view('landing.baju.index');});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
