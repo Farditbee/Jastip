@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DisplayController;
+use App\Http\Controllers\KategoriController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {return view('landing.index');});
@@ -22,9 +23,14 @@ Route::middleware('auth')->group(function () {
 //     Route::resource('dashboard/about', AboutController::class)->except('show');
 // });
 
+    // Routing Display
     Route::get('/dashboard/display', [DisplayController::class, 'index'])->name('dashboard.display.index');
     Route::get('/dashboard/display/create', [DisplayController::class, 'create'])->name('dashboard.display.create');
     Route::post('/dashboard/display/store', [DisplayController::class, 'store'])->name('dashboard.display.store');
+
+    // Routing Kategori
+    Route::get('/dashboard/kategori', [KategoriController::class, 'index'])->name('dashboard.kategori.index');
+    Route::get('/dashboard/kategori/create', [KategoriController::class, 'create'])->name('dashboard.kategori.create');
 
 
 require __DIR__.'/auth.php';

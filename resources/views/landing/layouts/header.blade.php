@@ -44,7 +44,7 @@
                             <div class="dropdown-menu rounded-0 m-0">
                                 <a href="booking.html" class="dropdown-item">Baju</a>
                                 <a href="team.html" class="dropdown-item">Aksesoris</a>
-                                <a href="testimonial.html" class="dropdown-item">Make</a>
+                                <a href="testimonial.html" class="dropdown-item">Make Up</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
