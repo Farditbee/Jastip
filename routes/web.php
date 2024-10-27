@@ -31,6 +31,10 @@ Route::middleware('auth')->group(function () {
     // Routing Kategori
     Route::get('/dashboard/kategori', [KategoriController::class, 'index'])->name('dashboard.kategori.index');
     Route::get('/dashboard/kategori/create', [KategoriController::class, 'create'])->name('dashboard.kategori.create');
+    Route::post('/dashboard/kategori/store', [KategoriController::class, 'store'])->name('dashboard.kategori.store');
+    Route::get('/dashboard/kategori/edit/{id}', [KategoriController::class, 'edit'])->name('dashboard.kategori.edit');
+    Route::put('/dashboard/kategori/update/{id}', [KategoriController::class, 'update'])->name('dashboard.kategori.update');
+    Route::delete('/dashboard/kategori/delete/{id}', [KategoriController::class, 'delete'])->name('dashboard.kategori.delete');
 
 
 require __DIR__.'/auth.php';
