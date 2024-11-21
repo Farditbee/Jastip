@@ -2,6 +2,7 @@
 @extends('layouts.template')
 @section('content')
 
+
     <body class="dashboard dashboard_1">
         <div class="full_container">
             <div class="inner_container">
@@ -37,7 +38,7 @@
                                         <div class="full padding_infor_info">
                                             <div class="table_row">
                                                 <div class="table-responsive">
-                                                    <form action='{{ route('dashboard.pakaian.store') }}' method='post'
+                                                    <form action='#' method='post'
                                                         enctype="multipart/form-data">
                                                         @csrf
                                                         <div class="col-md-12">
@@ -83,8 +84,7 @@
                                                                 <label class="col-sm-3 col-form-label">Size<span
                                                                         class="text-danger">*</span></label>
                                                                 <div class="col-sm-12">
-                                                                    <select name="size" id="size"
-                                                                        class="form-control" multiple>
+                                                                    <select class="js-example-basic-multiple" name="size[]" id="size" multiple="multiple">
                                                                         <option value="S">S</option>
                                                                         <option value="M">M</option>
                                                                         <option value="L">L</option>
@@ -151,12 +151,14 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                const sizeSelect = document.getElementById('size');
-                const choices = new Choices(sizeSelect, {
-                    placeholderValue: '~Pilih Size~', // Placeholder untuk select
-                    searchEnabled: true, // Aktifkan pencarian
-                });
+            const element = document.getElementById('size');
+            const choices = new Choices(element, {
+                removeItemButton: true,
+                searchEnabled: true,
+                placeholderValue: 'Pilih ukuran',
+                allowHTML: true,
             });
+        });
         </script>
 
     @endsection

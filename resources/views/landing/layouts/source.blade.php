@@ -1,9 +1,30 @@
 <head>
     <meta charset="utf-8">
     <title>Tes</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="" name="keywords">
     <meta content="" name="description">
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px; /* Pastikan ukuran font sesuai dengan tampilan */
+}
+
+.container-xxl {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.back-to-top {
+    width: 5vw; /* Responsif berdasarkan lebar viewport */
+    height: 5vw;
+}
+
+    </style>
 
     <!-- Favicon -->
     <link href="{{ asset('hotelier-1.0.1') }}/img/favicon.ico" rel="icon">

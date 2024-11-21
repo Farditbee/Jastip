@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DisplayController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\PakaianController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {return view('landing.index');});
@@ -35,6 +36,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard/kategori/edit/{id}', [KategoriController::class, 'edit'])->name('dashboard.kategori.edit');
     Route::put('/dashboard/kategori/update/{id}', [KategoriController::class, 'update'])->name('dashboard.kategori.update');
     Route::delete('/dashboard/kategori/delete/{id}', [KategoriController::class, 'delete'])->name('dashboard.kategori.delete');
+
+    Route::get('/dashboard/pakaian', [PakaianController::class, 'index'])->name('dashboard.pakaian.index');
+    Route::get('/dashboard/pakaian/create', [PakaianController::class, 'create'])->name('dashboard.pakaian.create');
 
 
 require __DIR__.'/auth.php';

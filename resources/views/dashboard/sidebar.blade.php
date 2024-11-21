@@ -26,7 +26,7 @@
             <a href="#elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-table purple_color"></i> <span>Data Master</span></a>
             <ul class="collapse list-unstyled" id="elements">
                <li><a href="#"> <i class="fa fa-circle" style="font-size: 12px"></i> <span>Data User</span></a></li>
-               <li><a href="#"><i class="fa fa-circle" style="font-size: 12px"></i> <span>Data Kamar</span></a></li>
+               <li><a href="{{ route('dashboard.pakaian.index')}}"><i class="fa fa-circle" style="font-size: 12px"></i> <span>Data Pakaian</span></a></li>
                <li><a href="#"><i class="fa fa-circle" style="font-size: 12px"></i> <span>Data Pesanan</span></a></li>
                <li><a href="{{ route('dashboard.kategori.index')}}"><i class="fa fa-circle" style="font-size: 12px"></i> <span>Kategori</span></a></li>
                <li><a href="{{ route('dashboard.display.index')}}"><i class="fa fa-circle" style="font-size: 12px"></i> <span>Display</span></a></li>
